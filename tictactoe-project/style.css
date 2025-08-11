@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2c3e50;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+section {
+    text-align: center;
+}
+
+.game--title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.game--container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #34495e;
+    border: 2px solid #2c3e50;
+    cursor: pointer;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s ease;
+}
+
+.cell:hover {
+    background-color: #4a6888;
+}
+
+.cell.x {
+    color: #1abc9c; /* Teal for X */
+}
+
+.cell.o {
+    color: #f1c40f; /* Yellow for O */
+}
+
+.game--status {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    height: 30px; /* Reserve space to prevent layout shift */
+}
+
+.game--restart {
+    background-color: #e74c3c;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.game--restart:hover {
+    background-color: #c0392b;
+}
